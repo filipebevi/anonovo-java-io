@@ -37,7 +37,7 @@ public class NovoAnoGoogleDrive {
                 for(String dir : subDirectory){
                     
                     String novo = directory.getPath();
-                    novo=novo.replace("2019", "2020");
+                    novo=novo.replace("2020", "2021");
                     File novodiretorio = new File(novo);
                     boolean criou = novodiretorio.mkdirs();
                     listar(new File(directory + File.separator  + dir));
@@ -54,10 +54,11 @@ public class NovoAnoGoogleDrive {
 
         caminho = "g:" + File.separator + "Meu Drive" + File.separator + "CORPORATIVO";
         int ano;
-        ano = 2020;
+        ano = 2021;
 
         File pasta = new File(caminho);
         File array[] = pasta.listFiles();
+        
 
         for (File array1 : array) {
             if (array1.isDirectory()) {
